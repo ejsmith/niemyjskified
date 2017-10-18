@@ -67,7 +67,7 @@ body {
 /*=============Photo=============*/
 
 .photo {
-    background: url('img/niemyjskified.jpg') 50% 50% no-repeat;
+    background: url('niemyjskified.png') 50% 50% no-repeat;
     background-size: contain;
     background-color: #0a77f5;
     width: 60vmin;
