@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="You just got Niemyjskified!">
+    <meta name="keywords" content="FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML,FML">
+
+    <title>You just got Niemyjskified!</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="shortcut icon" href="pic/favicon.ico" type="image/x-icon">
+
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="frame-scroll"></div>
+    <div class="frame-scroll-top"></div>
+    <div class="frame-scroll-bottom"></div>
+
+    <div class="container-scroll">
+
+        <div class="photo"></div>
+
+        <div class="icons">
+            <a class="icon-inst" href="#"></a>
+            <a class="icon-fb" href="#"></a>
+            <a class="icon-twit" href="#"></a>
+        </div>
+
+        <div class="text-heading">
+            <h2>You,</h2>
+            <h2>Just got</h2>
+            <h2><span>Niemyjskified!</span></h2>
+        </div>
+
+        <div class="container-cv-btn">
+        </div>
+
+    </div>
+
+    <script>
+
+        var imgIndex = 1;
+        showImage(imgIndex);
+
+        function nextImg(n) {
+            showImage(imgIndex += n);
+        }
+
+        function currentImage(n) {
+            showImage(imgIndex = n);
+        }
+
+        function showImage(n) {
+            var i;
+            var images = document.getElementsByClassName("modal-img");
+            if (n > images.length) {imgIndex = 1}
+            if (n < 1) {imgIndex = images.length}
+            for (i = 0; i < images.length; i++) {
+                images[i].style.display = "none";
+            }
+            images[imgIndex-1].style.display = "block";
+        }
+
+    </script>
+
+</body>
+</html>
